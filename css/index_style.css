@@ -1,0 +1,228 @@
+html{
+    scroll-behavior: auto !important;
+}
+
+body
+{
+    font-family: "segoe ui light";
+}
+
+:root
+{
+    --mainColor : #fc5356;
+
+}
+
+#home
+{
+    background: linear-gradient( #fc535688 , rgba(255,193,7,0.5) ) , url(../images/home-banner.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.text-color
+{
+    color: var(--mainColor) !important;
+}
+
+.bg-mainColor
+{
+    background-color: var(--mainColor) !important;
+}
+
+
+.bg-color
+{
+    background-color: #fc5356 !important;
+}
+.icons > div , #home a
+{
+    transition: 0.5s;
+    cursor: pointer;
+}
+.icons > div:hover , #home a:hover
+{
+    color: var(--mainColor) !important;
+}
+#about h1 , #services h1 , #porto h1 , #testi h1
+{
+    position: relative;
+    letter-spacing: 0.5rem;
+}
+#about h1::before
+{
+    content: 'ABOUT ME';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fc535644;
+    font-weight: bold;
+    font-size: 3.5rem;
+    letter-spacing: 0.6rem;
+}
+
+#services  , #testi
+{
+    background-color: #f7f7f7;
+}
+#services h1::before
+{
+    content: 'SERVICES';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fc535644;
+    font-weight: bold;
+    font-size: 3.5rem;
+    letter-spacing: 0.6rem;
+}
+nav a.nav-link
+{
+    transition: 0.5s;
+}
+nav a.nav-link:hover
+{
+    color: #fc5356 !important;
+}
+
+/* ===================== porto ================== */
+#porto h1::before
+{
+    content: 'PORTFOLIO';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fc535644;
+    font-weight: bold;
+    font-size: 3.5rem;
+    letter-spacing: 0.6rem;
+}
+#porto .nav-link
+{
+    color: black !important;
+}
+
+#porto .nav-pills .nav-link.active, .nav-pills .show>.nav-link
+{
+    background-color: transparent !important;
+    color: #FF305B !important;
+}
+
+#porto .porto-member .caption
+{
+    background-color: rgba(0, 0, 0, 0.57);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#porto .porto-member .caption i
+{
+    color: #FF305B;
+    bottom: 3%;
+    right: 3%;
+    font-size: 30px;
+}
+
+#porto .porto-member:hover .caption
+{
+    opacity: 1;
+}
+
+
+#porto .second-part
+{
+    background-color: #f1f1f1;
+}
+
+#porto .second-part i , #testi .carousel-item i
+{
+    color: #FF305B;
+}
+
+/* ========== testi ============= */
+#testi h1::before
+{
+    content: 'TESTIMONIAL';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fc535644;
+    font-weight: bold;
+    font-size: 3.5rem;
+    letter-spacing: 0.6rem;
+}
+
+#testi .carousel-item > img
+{
+    width: 7% !important;
+}
+
+#testi .brd
+{
+    width: 10%;
+    height: 0.1rem;
+}
+
+#testi .carousel-indicators [data-bs-target]
+{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+
+#testi .carousel-indicators [data-bs-target]:nth-child(1)
+{
+    background-image: url(../images/client1.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+#testi .carousel-indicators [data-bs-target]:nth-child(2)
+{
+    background-image: url(../images/client2.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+#testi .carousel-indicators [data-bs-target]:nth-child(3)
+{
+    background-image: url(../images/client3.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+
+
+.changeBoxTask
+{
+    position: fixed;
+    top:50%;
+    left: 0;
+    z-index: 999999;
+}
+
+.changeBoxTask li
+{
+    width: 30px;
+    height: 30px;
+    background-color: #09c;
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+.fa-palette , .changeBoxTask li
+{
+    cursor: pointer;
+}
+
+
+.fa-circle-arrow-up
+  {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 9999999;
+  }
